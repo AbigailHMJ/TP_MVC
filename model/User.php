@@ -17,8 +17,42 @@ abstract class User{
     }
 
     // Méthode pour email
+    public function getEmail(): string{
+        return $this->email;
+    }
 
-    
+    public function setEmail(string $email): void{
+        $this->email = $email;
+    }
+
     // Méthode pour password
+    public function getPassword(): string{
+        return $this->password;
+    }
+
+    public function setPassword(string $password): void{
+        $this->password = $password;
+    }
+
     // Méthode pour role
+    public function getRole(): string{
+        return $this->role;
+    }
+
+    public function setRole(string $role): void{
+        $this->role = $role;
+    }
+
+    // Méthode pour différencier les affichages
+    abstract public function displayPage();
 }
+
+// class Admin extends User{
+//     public function displayPage(){
+
+//     };
+// }
+
+// class Member extends User{
+
+// }
