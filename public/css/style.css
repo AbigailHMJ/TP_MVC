@@ -4,10 +4,27 @@ Outfit
 Roboto Flex
 Playfair Display SC */
 
+header{
+    background:#005293;
+    padding:10px;
+}
+
 h1{
     font-family:'Outfit',sans-serif;
+    font-size:7em;
+    color:#fecb00;
+    line-height:0;
+    text-align:left;
+    margin:50px 0px 45px 20px;
+    letter-spacing:3px;
+    text-transform:lowercase;
+
 }
 
 .subtitle{
     font-family:'Playfair Display SC',serif;
+    font-style:italic;
+    color:#fff;
+    margin:0px 0px 0px 50px;
+    font-size:1em;
 }
