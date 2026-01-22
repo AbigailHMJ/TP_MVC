@@ -1,21 +1,27 @@
 <?php
 
 require_once __DIR__ . '/../config/Database.php';
-require_once __DIR__ . '/../model/Product.php';
 require_once __DIR__ . '/../repository/ProductRepository.php';
+require_once __DIR__ . '/../model/Product.php';
 
-class ProductController {
-    public function index(): void{
+class ProductController
+{
+
+    public function index(): void
+    {
         $pdo = getPDO();
-        $manager = new ProductRepository($pdo);
-        $products = $manager->findAll();
+        $repository = new ProductRepository($pdo);
+        $products = $repository->getAll();
         require_once __DIR__ . '/../view/homepage.php';
     }
 
-    public function show(int $id): void {
-        $pdo = getPDO();
-        $manager = new ProductRepository($pdo);
-        $products = $manager->findById($id);
-    }
-}
+    // public function displayProduct(): void
+    // {
+    //     $pdo = getPDO();
+    //     $id = (int)($_GET['id'] ?? 0);
+    //     $repository = new ProductRepository($pdo);
+    //     $product = $repository->getById($id);
+    //     // require_once __DIR__ . '/../view/product_details.php';
 
+    // }
+}

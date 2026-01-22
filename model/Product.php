@@ -5,7 +5,7 @@ class Product{
     private string $name;
     private float $price;
     private string $description;
-    private float $created_at;
+    private string $created_at;
 
     // GETTERS & SETTERS
     // Méthode pour l'id du produit

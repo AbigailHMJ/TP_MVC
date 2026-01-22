@@ -6,10 +6,10 @@ $page = $_GET['page'] ?? 'homepage';
 
 switch ($page) {
 
-    // case 'product': 
-    //     $controller = new ProductController();
-    //     $controller->displayProduct();
-    //     break;
+    case 'product': 
+        $controller = new ProductController();
+        $controller->displayProduct();
+        break;
     
     case 'homepage':
     default:
