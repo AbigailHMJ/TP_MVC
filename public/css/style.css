@@ -4,7 +4,7 @@ Outfit
 Roboto Flex
 Playfair Display SC */
 
-header{
+#header{
     background:#005293;
     padding:10px;
 }
@@ -44,7 +44,7 @@ h1{
     border-bottom: solid 5px #005293;
 }
 
-footer{
+#footer{
     background:#005293;
     padding:10px;
 }

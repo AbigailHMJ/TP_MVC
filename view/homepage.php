@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
 </head>
 
-<?php include_once('./view/layout/header.php');?>
+<?php include('./view/layout/header.php');?>
 
 <body>
     
@@ -17,12 +17,13 @@
                     <?= $product->getName() ?><br>
                     <?= $product->getPrice() ?>€<br>
                     <a href="?page=product&id=<?= $product->getId() ?>">+ d'infos</a>
+                    <button class="add" type="button">Ajouter au panier</button>
             </div>
             <?php endforeach; ?>
             </div>
     </main>
 
-    <?php include_once('./view/layout/footer.php'); ?>
+    <?php include('./view/layout/footer.php'); ?>
     
 </body>
 
