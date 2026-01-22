@@ -15,13 +15,13 @@ class ProductController
         require_once __DIR__ . '/../view/homepage.php';
     }
 
-    // public function displayProduct(): void
-    // {
-    //     $pdo = getPDO();
-    //     $id = (int)($_GET['id'] ?? 0);
-    //     $repository = new ProductRepository($pdo);
-    //     $product = $repository->getById($id);
-    //     // require_once __DIR__ . '/../view/product_details.php';
+    public function displayProduct(): void
+    {
+        $pdo = getPDO();
+        $id = (int)($_GET['id'] ?? 0);
+        $repository = new ProductRepository($pdo);
+        $product = $repository->getById($id);
+        require_once __DIR__ . '/../view/product.php';
 
-    // }
+    }
 }

@@ -11,7 +11,7 @@ class Product{
     // Méthode pour l'id du produit
     public function getID(): int {
         return $this->id;
-    }
+    } 
 
     public function setID(int $id): void{
         $this->id = $id;
@@ -19,7 +19,7 @@ class Product{
 
     // Méthode pour le nom du produit
     public function getName(): string{
-        return strtoupper($this->name);
+        return ($this->name);
     }
 
     public function setName(string $name): void{

@@ -43,3 +43,8 @@ h1{
     padding:10px;
     border-bottom: solid 5px #005293;
 }
+
+footer{
+    background:#005293;
+    padding:10px;
+}

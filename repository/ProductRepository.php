@@ -32,10 +32,13 @@ public function getAll(){
     return $result;
 }
 
-public function getById(int $id): ?Product{
-    $stmt = $this->db->prepare("SELECT * FROM products WHERE id = :id");
-    $stmt->setFetchMode(PDO::FETCH_CLASS, "Product");
-    $stmt->execute(['id' => $id]);
-}
+public function getById(int $id): ?Product {
+        $stmt = $this->db->prepare("SELECT * FROM products WHERE id = :id");
+        $stmt->setFetchMode(PDO::FETCH_CLASS, 'Product');
+        $stmt->execute(['id' => $id]);
+
+        $product = $stmt->fetch();
+        return $product ?: null;
+    }
 
 }
