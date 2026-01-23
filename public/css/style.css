@@ -25,6 +25,7 @@ h1 {
     text-transform: lowercase;
 }
 
+
 .subtitle {
     font-family: "Playfair Display SC", serif;
     font-style: italic;
@@ -42,7 +43,7 @@ h1 {
 header a {
     color: #fff;
     font-family: "Outfit", sans-serif;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     text-transform: uppercase;
     font-weight:bold;
     letter-spacing:1px;
@@ -68,8 +69,9 @@ footer {
     flex-direction: row;
     gap: 1em;
     flex-wrap: wrap;
-    justify-content: justify;
+    justify-content: space-evenly;
     align-items: justify;
+    margin:0 auto;
 }
 
 .product-card {
@@ -143,7 +145,103 @@ footer {
     border: none;
     padding: 15px;
     border-radius: 10px;
-    font-family: "Outfit", sans-serif;
+    font-family: 'Outfit', sans-serif;
     font-weight: bold;
     margin:10px 0px 0px 50px;
+}
+
+.go-back{
+    text-decoration: none;
+    color: #005293;
+    font-weight: bold;
+    font-size:1.2em;
+    margin:15px 0px 0px 20px;
+    font-family:'Outfit',sans-serif;
+}
+
+/* ----- PAGE DE CONNEXION ----- */
+
+.login-title-background{
+    background: #005293;
+    padding:50px;
+    margin:0px 0px 20px 0px;
+}
+
+.login-title{
+    font-family: 'Outfit', sans-serif;
+    font-size: 5em;
+    color: #fecb00;
+    line-height: 0;
+    text-align: left;
+    letter-spacing: 3px;
+    text-transform: lowercase;
+    margin:0px 0px 0px 20px;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    width:60%;
+    gap:10px;
+    justify-content:center;
+    align-items:center;
+    /* background:#005293; */
+    padding:25px;
+    margin:0 auto;
+}
+
+.form-email{
+    padding:10px;
+    /* border-radius:10px; */
+    border:none;
+    border-bottom: solid 5px #005293;
+    width:50%;
+    text-transform:uppercase;
+    font-size:0.7em;
+}
+
+.form-email:focus{
+    outline:none;
+    font-weight:bold;
+}
+
+.form-password{
+    padding:10px;
+    /* border-radius:10px; */
+    border:none;
+    border-bottom: solid 5px #005293;
+    width:50%;
+    text-transform:uppercase;
+    font-size:0.7em;
+}
+
+.form-password:focus{
+    outline:none;
+    font-weight:bold;
+}
+
+.form-submit{
+    background: #fecb00;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: bold;
+    font-size:0.9em;
+}
+
+/* ----- AFFICHAGE ADMINISTRATEUR ----- */
+
+.new-product{
+    background: #fecb00;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: bold;
+}
+
+.card-product-date{
+    font-family:'Roboto Flex',sans-serif;
+    font-size:0.7em;
 }

@@ -29,6 +29,10 @@ INSERT INTO `products` (`id`, `name`, `price`, `description`, `created_at`) VALU
 (8, 'Gravlax 200g', 9.95, 'Saumon mariné aux herbes', '2026-01-20'),
 (9, 'Kötbullar 500g', 11.99, 'Boulettes de viande', '2026-01-20');
 
+-- Modification d'un produit, mise à jour de la description
+UPDATE `products` SET `description` = 'Petit cheval en bois traditionnel peint à la main' WHERE `products`.`id` = 1;
+
+
 -- TABLE ORDERS
 -- Création de la table
 CREATE TABLE orders (

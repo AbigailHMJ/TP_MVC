@@ -18,6 +18,11 @@ switch ($page) {
         $controller->index();
         break;
 
+    // case 'login':
+    // $controller = new UserController();
+    // $controller->login();
+    // break;
+
 }
 
 ?>

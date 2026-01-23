@@ -11,9 +11,9 @@
 
 <header>
         <div class="block-title"><h1>fika</h1>
-        <subtitle class="subtitle">épicerie suédoise</subtitle></div>
+        <subtitle class="subtitle">svenska affären</subtitle></div>
 
-       <div class="block-login"><a href="../login.php">Connexion</a></div>
+       <div class="block-login"><a href="view/login.php">Connexion</a></div>
     </header>
 
 </html>

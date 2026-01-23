@@ -3,17 +3,22 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width-device-width, initial-scale-1,0">
+    <link href="../public/css/style.css" rel="stylesheet">
     <title>Connexion</title>
 </head>
 
-<body><h1>Inscription</h1>
+<body>
+    <div class="login-title-background">
+        <h1 class="login-title">se connecter</h1>
+    </div>
     <form method="POST">
-        <input type="email" name="email" placeholder="Email" required>
-        <input type="password" name="password" placeholder="Mot de passe" required>
-        <input type="submit" value="Connexion" name="register">
+        <input type="email" class="form-email" name="email" placeholder="Email" required>
+        <input type="password" class="form-password" name="password" placeholder="Mot de passe" required>
+        <input type="submit" class="form-submit" value="Connexion" name="register">
     </form>
-    <p>Merci de remplir tous les champs.</p>
+    <a class="go-back" href="http://localhost/TP_MVC/">← Retour</a>
+
+<?php include('layout/footer.php'); ?>
 </body>
 
 </html>

@@ -20,7 +20,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
 
         $insert->execute([":email" => $email, ":password" => $hash]);
 
-        header("Location: login.php");
+        header("Location: homepage.php");
         exit;
     }
 

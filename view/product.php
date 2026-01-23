@@ -16,6 +16,7 @@
     <h2 class="product-title"><?= $product->getName() ?></h2>
     <p class="product-price"><?= $product->getPrice() ?> €</p>
     <p class="product-description"><?= $product->getDescription() ?></p>
+    <a class="go-back" href="http://localhost/TP_MVC/">← Retour</a>
     <button class="product-add" type="button">Ajouter au panier</button>
     <?php endif; ?>
 
