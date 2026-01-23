@@ -6,7 +6,7 @@
 </head>
 
 <footer>
-    2026 - jag är för trött för det, FUNGERA FFS
+    2026 — Doesn't work all the way but at least it's pretty.
 </footer>
 
 </html>

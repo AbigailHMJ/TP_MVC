@@ -14,9 +14,9 @@
             <?php
             foreach ($products as $product): ?>
                 <div class="product-card">
-                    <?= $product->getName() ?><br>
-                    <?= $product->getPrice() ?>€<br>
-                    <a href="?page=product&id=<?= $product->getId() ?>">+ d'infos</a>
+                    <h4 class="product-title"><?= $product->getName() ?></h4>
+                   <p class="product-price"><?= $product->getPrice() ?>€</p>
+                    <a href="?page=product&id=<?= $product->getId() ?>">voir plus</a>
                     <button class="add" type="button">Ajouter au panier</button>
             </div>
             <?php endforeach; ?>

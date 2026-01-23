@@ -1,50 +1,110 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap");
 /* POLICES 
 Outfit
 Roboto Flex
 Playfair Display SC */
 
-#header{
-    background:#005293;
-    padding:10px;
+header {
+    background: #005293;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
 }
 
-h1{
-    font-family:'Outfit',sans-serif;
-    font-size:7em;
-    color:#fecb00;
-    line-height:0;
-    text-align:left;
-    margin:50px 0px 45px 20px;
-    letter-spacing:3px;
-    text-transform:lowercase;
-
+h1 {
+    font-family: "Outfit", sans-serif;
+    font-size: 7em;
+    color: #fecb00;
+    line-height: 0;
+    text-align: left;
+    margin: 50px 0px 45px 20px;
+    letter-spacing: 3px;
+    text-transform: lowercase;
 }
 
-.subtitle{
-    font-family:'Playfair Display SC',serif;
-    font-style:italic;
-    color:#fff;
-    margin:0px 0px 0px 50px;
-    font-size:1em;
+.subtitle {
+    font-family: "Playfair Display SC", serif;
+    font-style: italic;
+    color: #fff;
+    margin: 0px 0px 0px 50px;
+    font-size: 1em;
+    align-self: left;
 }
 
-.products-display{
-    display:flex;
-    flex-direction:row;
-    gap:1em;
-    flex-wrap:wrap;
-    justify-content:justify;
-    align-items:justify;
+.block-login {
+    align-self: flex-end;
+    margin:0px 10px 10px 0px;
 }
 
-.product-card{
-    width:30%;
-    padding:10px;
+header a {
+    color: #fff;
+    font-family: "Outfit", sans-serif;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-weight:bold;
+    letter-spacing:1px;
+}
+
+.products-display {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    flex-wrap: wrap;
+    justify-content: justify;
+    align-items: justify;
+}
+
+.product-card {
+    width: 30%;
+    padding: 10px;
     border-bottom: solid 5px #005293;
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
-#footer{
-    background:#005293;
-    padding:10px;
+.product-title {
+    font-family: "Outfit", sans-serif;
+    line-height: 0px;
+    font-size: 1.2em;
+}
+
+.product-price {
+    line-height: 0;
+    margin: 0;
+}
+
+.product-card a {
+    align-self: flex-start;
+    text-decoration: none;
+    color: #005293;
+    font-weight: bold;
+}
+
+.add {
+    background: #fecb00;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-family: "Outfit", sans-serif;
+    font-weight: bold;
+    align-self: flex-end;
+    justify-self: flex-end;
+}
+
+footer {
+    background: #005293;
+    padding: 10px;
+    margin-top: 20px;
+    color: #fff;
+    font-family: "Outfit", sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    text-align: center;
 }
