@@ -4,6 +4,8 @@ Outfit
 Roboto Flex
 Playfair Display SC */
 
+/* ----- HEADER & FOOTER ----- */
+
 header {
     background: #005293;
     padding: 10px;
@@ -46,6 +48,21 @@ header a {
     letter-spacing:1px;
 }
 
+footer {
+    background: #005293;
+    padding: 10px;
+    margin-top: 20px;
+    color: #fff;
+    font-family: "Outfit", sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    text-align: center;
+}
+
+
+/* ----- PAGE D'ACCUEIL ----- */
+
 .products-display {
     display: flex;
     flex-direction: row;
@@ -68,13 +85,13 @@ header a {
     gap: 10px;
 }
 
-.product-title {
+.card-product-title {
     font-family: "Outfit", sans-serif;
     line-height: 0px;
     font-size: 1.2em;
 }
 
-.product-price {
+.card-product-price {
     line-height: 0;
     margin: 0;
 }
@@ -86,7 +103,7 @@ header a {
     font-weight: bold;
 }
 
-.add {
+.card-add {
     background: #fecb00;
     border: none;
     padding: 15px;
@@ -97,14 +114,36 @@ header a {
     justify-self: flex-end;
 }
 
-footer {
-    background: #005293;
-    padding: 10px;
-    margin-top: 20px;
-    color: #fff;
+/* ----- PAGE PRODUIT UNIQUE ----- */
+
+.product-title{
     font-family: "Outfit", sans-serif;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 0.7em;
-    text-align: center;
+    line-height: 0px;
+    font-size: 2em;
+    text-align:center;
+}
+
+.product-price{
+    font-family:'Roboto Flex',sans-serif;
+    font-size:1.3em;
+    color: #005293;
+    font-weight: bold;
+    text-align:center;
+}
+
+.product-description{
+    font-family:'Roboto Flex',sans-serif;
+    text-align:left;
+    margin-left:50px;
+    font-size:1em;
+}
+
+.product-add{
+    background: #fecb00;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-family: "Outfit", sans-serif;
+    font-weight: bold;
+    margin:10px 0px 0px 50px;
 }

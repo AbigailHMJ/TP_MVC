@@ -7,14 +7,19 @@
 </head>
 
 <body>
+    <?php include('./view/layout/header.php');?>
+
     <?php if (!$product): ?>
-    <h1>Produit introuvable</h1>
-    <a href="?page=produits">Retour</a>
+    <h2>Produit introuvable</h2>
+    <a href="?page=products">Retour</a>
     <?php else: ?>
-    <h1><?= $product->getName() ?></h1>
-    <p>Prix HT : <?= $product->getPrice() ?> €</p>
-    <p><?= $product->getDescription() ?>
+    <h2 class="product-title"><?= $product->getName() ?></h2>
+    <p class="product-price"><?= $product->getPrice() ?> €</p>
+    <p class="product-description"><?= $product->getDescription() ?></p>
+    <button class="product-add" type="button">Ajouter au panier</button>
     <?php endif; ?>
+
+    <?php include('./view/layout/footer.php'); ?>
 </body>
 
 </html>
